@@ -1,11 +1,14 @@
+* {
+    padding: 0; 
+    margin: 0;
+}
+
 body{
-    /* background-color: rgb(44, 50, 58); */
     font-size: 13px;
     font-weight: 200;
     font-family: Comic Sans MS, Comic Sans, cursive;
     background-image: url("../pages/cosmos.jfif");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: top;
 }
 
@@ -32,29 +35,15 @@ color: royalblue;
 }
 
 .container{
-    /* background-color: rgb(77, 88, 102); */
     max-width: 750px;
     margin: auto;
     background-color: rgba(77, 88, 102, 0.5);
 }
 
-/*     .social{
-        background:rgb(169, 160, 255);
-        padding: 15px;
-        padding-left: 25%;
-        padding-right: 25%;
-        border: 5px solid blue;
-        border-left-style: unset;
-        border-right-style: unset;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-color: rgb(17, 0, 172);
-        border-bottom-style: dotted;
-        margin: 5%;
-    } */
 
 .info {
-    margin-bottom: 20px;
+    margin-top: 100px;
+    justify-content: space-around;
 }
 
 .card h2 {
@@ -70,34 +59,16 @@ color: royalblue;
     margin-bottom: 10px;
 }
 
-.animalsTable {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid black;
-}
-  
-thead th:nth-child(1) {
-    width: 30%;
-}
-  
-thead th:nth-child(2) {
-    width: 20%;
-}
-  
-thead th:nth-child(3) {
-    width: 15%;
-}
-  
-thead th:nth-child(4) {
-    width: 35%;
-}
-  
-th, td {
-    padding: 20px;
+.animalsList {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.animals {
+.animalsPages {
     width: 350px;
     border-radius: 36px;
     margin-left: centr;
@@ -106,15 +77,14 @@ th, td {
 }
 
 header {
-   display: flex;
-   justify-content: space-between;
-   padding: 10px;
    background-color: black;
    color: white;
    font-family: Comic Sans MS, Comic Sans, cursive;
-   max-width: 750px;
    margin: auto;
-   border-radius: 14px;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   align-content: center;
 }
 
 .header__section {
@@ -207,4 +177,9 @@ footer {
 .container {
    text-align: center;
    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    color: white;
 }
